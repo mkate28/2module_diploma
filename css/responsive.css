@@ -28,7 +28,6 @@
 	}
 	.post-content {
 		width: 100%;
-		margin-top: 15px;
 	}
 	.post-description {
 		width: 100%;
@@ -38,9 +37,6 @@
 	}
 	.products {
 		flex-wrap: wrap;
-	}
-	.product-card {
-		margin-bottom: 26px;
 	}
 	.copyright {
 		padding-top: 49px;
@@ -53,15 +49,25 @@
 	.header {
 		background-image: url('../images/banner-bg-tablet.jpg');
 	}
+	.logo img {
+		width: 158px;
+		height: 36px;
+	}
 	.header-content {
-		padding: 103px 0 124px;
+		padding: 82px 0 115px;
 	}
 	.header-title {
 		font-size: 2.5rem;
 		line-height: 1.375em;
 	}
 	.trends {
-		padding: 46px 0 50px;
+		padding: 43px 0;
+	}
+	.big-title {
+		font-size: 1.125rem;
+	}
+	.trends-list {
+		margin-top: 19px;
 	}
 	.trends-card:nth-child(odd) {
 		margin: 0 2px 4px 0;
@@ -71,18 +77,34 @@
 	}
 	.trends-card {
 		width: calc(50% - 4px);
+		height: 246px;
 	}
 	.item-title a {
 		font-size: 1.062rem;
 		line-height: 1.29em;
 	}
 	.main {
-		width: 56%;
+		width: 54%;
 		margin-right: 30px;
+	}
+	.post {
+		margin-bottom: 61px;
 	}
 	.post-img img {
 		width: 100%;
 		object-fit: cover;
+	}
+	.post-content {
+		margin-top: 7px;
+	}
+	.post-title a {
+		width: 100%;
+	}
+	.description-text {
+		margin-top: 29px;
+	}
+	.post-description + p {
+		margin-top: 14px;
 	}
 	.products-section {
 		padding-top: 10px;
@@ -96,6 +118,7 @@
 	}
 	.product-card {
 		width: calc(50% - 10px);
+		margin-bottom: 20px;
 	}
 }
 
@@ -116,6 +139,7 @@
 @media (max-width: 640px) {
 	.header {
 		background-image: url('../images/banner-mobile.jpg');
+		padding-bottom: 84px;
 	}
 	.nav {
 		position: relative;
@@ -124,23 +148,42 @@
 		width: 269px;
 		height: 61px;
 		position: absolute;
-		top: 170px;
+		top: 230px;
 		left: 50%;
 		transform: translate(-50%);
 	}
 	.header-content {
-		margin-top: 104px;
+		margin-top: 154px;
 	}
 	.header-title {
 		font-size: 1.625rem;
 		line-height: 1.38em;
 	}
+	.title {
+		font-size: 1rem;
+	}
 	.trends {
-		padding: 40px 0 44px;
+		padding: 40px 0 41px;
+	}
+	.trends-list {
+		margin-top: 22px;
 	}
 	.trends-card:nth-child(odd), .trends-card:nth-child(even) {
 		margin: 0 0 4px 0;
 		width: 100%;
+		height: 230px;
+	}
+	.trends-garden .trends-content {
+		padding: 7% 5%;
+	}
+	.trends-garden a {
+		max-width: 215px;
+	}
+	.trends-cheese .trends-content {
+	    padding: 7% 5% 8% 4%;
+	}
+	.trends-hike .trends-content {
+	    padding: 7% 7% 7% 5%;
 	}
 	.item-title a {
 		font-size: 1rem;
@@ -150,6 +193,9 @@
 		flex-wrap: wrap;
 		align-items: center;
 	}	
+	.post {
+		margin-bottom: 53px;
+	}
 	.post::after {
 		content: '';
 		width: 100%;
@@ -160,7 +206,21 @@
 	}
 	.post-img img {
 		width: 100%;
+		max-height: 254px;
 		object-fit: cover;
+	}
+	.post-content {
+		margin-top: 6px;
+	}
+	.post-title a {
+    	margin-bottom: 14px;
+	}
+	.description-text {
+    	margin-top: 13px;
+    	font-size: 0.875rem;
+	}
+	.description-text + p {
+    	margin-top: 19px;
 	}
 	.sidebar {
 		width: 100%;
@@ -172,18 +232,40 @@
 	.new-posts {
 		margin: 0 auto 28px;
 	}
+	.search {
+		margin-bottom: 39px;
+	}
+	.subscribe {
+		margin-bottom: 40px;
+	}
+	.tags {
+		margin-bottom: 32px;
+	}
+	.tag-link {
+		padding: 3px 12px 5px;
+	}
 	.products-section {
-		padding-top: 40px;
+		padding-top: 50px;
 	}
 	.products {
 		margin: 28px auto 0;
 	}
 	.product-card {
 		width: 100%;
+		margin-bottom: 26px;
+	}
+	.card-body {
+		height: 240px;
+	}
+	.product-title {
+		font-size: 1.062rem;
+	}
+	.card-footer {
+		margin-bottom: 28px;
 	}
 }
 
-@media (max-width: 640px) and (orientation: landscape) {
+@media (min-width: 640px) and (max-width: 1023px) and (orientation: landscape) {
 	.trends-card:nth-child(odd) {
 		margin: 0 2px 4px 0;
 	}
