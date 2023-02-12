@@ -91,6 +91,12 @@
 	.trends-content {
 		padding: 9%;
 	}
+	.trends-cheese .trends-content {
+		padding-left: 10%;
+	}
+	.trends-lemons .trends-content {
+		padding-left: 10%;
+	}
 	.trends-hike a {
 		max-width: 215px;
 	}
@@ -98,16 +104,20 @@
 		font-size: 1.062rem;
 		line-height: 1.29em;
 	}
+	.trend-title a {
+		margin-top: 6px;
+	}
 	.main {
 		width: 53.6%;
 		margin-right: 30px;
 		margin-left: 20px;
 	}
-	.post {
-		margin-bottom: 61px;
+	.post:last-child {
+		margin-bottom: 57px;
+		margin-top: -4px;
 	}
 	.post:not(:last-child) {
-		margin-bottom: 64px;
+		margin-bottom: 61px;
 	}
 	.post-img img {
 		width: 100%;
@@ -118,9 +128,14 @@
 	}
 	.post-title a {
 		width: 100%;
+		margin-bottom: 29px;
+	}
+	.post-title:first-child a {
+		margin-bottom: 29px;
 	}
 	.description-text {
-		margin-top: 29px;
+		margin-top: 28px;
+		max-width: 392px;
 	}
 	.post-description + p {
 		margin-top: 14px;
@@ -128,8 +143,27 @@
 	.sidebar {
 		margin-right: 15px;
 	}
+	.preview-img img {
+		margin-right: 23px;
+	}
+	.search {
+		margin-bottom: 56px;
+		margin-right: 5px;
+	}
+	.field {
+		padding-left: 15px;
+	}
+	.mail h2 {
+		margin-right: 8px;
+	}
+	.subscribe {
+		margin-right: 7px;
+	}
+	.tag-link {
+		padding: 3px 13px 5px;
+	}
 	.products-section {
-		padding: 7px 0 31px;
+		padding: 7px 0 19px;
 	}
 	.products {
 		margin: 28px 21px 0;
@@ -212,22 +246,28 @@
 		font-size: 1rem;
 		line-height: 1.25em;
 	}
+	.trend-title a {
+		margin-top: 7px;
+	}
+	.cathegory-link {
+		margin-right: 19px;
+	}
 	.page {
 		flex-wrap: wrap;
 		align-items: center;
 	}	
 	.post {
-		margin-bottom: 55px;
+		margin-bottom: 61px;
 	}
 	.post:not(:last-child) {
-		margin-bottom: 51px;
+		margin-bottom: 58px;
 	}
 	.post::after {
 		content: '';
 		width: 100%;
 		height: 4px;
 		position: absolute;
-		bottom: -22px;
+		bottom: -19px;
 		background-color: #eee;
 	}
 	.post-img img {
@@ -247,16 +287,18 @@
 	.description-text {
     	margin-top: 13px;
     	font-size: 0.875rem;
+    	max-width: 325px;
+    	line-height: 20px;
 	}
 	.description-text + p {
-    	margin-top: 2px;
+    	margin-top: 4px;
 	}
 	.sidebar {
 		width: 100%;
 	}
 	.latest-posts {
 		width: 330px;
-		margin: 0 auto 60px;
+		margin: 0 auto 56px;
 		margin-left: -2px;
 	}
 	.new-posts {
@@ -265,11 +307,8 @@
 	.preview-title a {
 		width: 245px;
 	}
-	.search {
-		margin-bottom: 34px;
-	}
-	.subscribe {
-		margin-bottom: 40px;
+	.search, .subscribe {
+		margin-bottom: 38px;
 	}
 	.tags {
 		margin-bottom: 32px;
@@ -278,14 +317,14 @@
 		padding: 3px 12px 5px;
 	}
 	.products-section {
-		padding-top: 50px;
+		padding-top: 54px;
 	}
 	.products {
 		margin: 28px auto 0;
 	}
 	.product-card {
 		width: 100%;
-		margin-bottom: 26px;
+		margin-bottom: 24px;
 	}
 	.card-body {
 		padding: 47px 23px 0px 16px;
